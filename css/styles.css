@@ -189,13 +189,15 @@ button {
 }
 
 @media (min-width: 768px) {
-    .section-2 {
-        height: 100vh;
-    }
-
     .customers-wrapper {
         flex-direction: row;
         height: 70%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .section-2 {
+        height: 100vh;
     }
 }
 
@@ -224,7 +226,6 @@ button {
 
 @media (min-width: 768px) {
     .customer {
-        /* width: 22rem; */
         width: 35rem;
         margin: 4rem 1rem;
     }
