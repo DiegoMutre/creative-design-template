@@ -28,4 +28,9 @@ a {
 button {
     border: none;
 }
+
+.container {
+    width: 100%;
+    overflow-x: hidden;
+}
 /* End of Global Styles */
