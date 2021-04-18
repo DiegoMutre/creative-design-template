@@ -1,5 +1,5 @@
 const storyBtn = document.querySelectorAll(".story-btn");
-const homeSection = document.querySelector("#home");
+const navbar = document.querySelector("#navbar");
 const scrollUpBtn = document.querySelector(".scroll-up-btn");
 
 function toggleStory(e) {
@@ -17,6 +17,4 @@ function observeHomeSection(entries) {
     scrollUpBtn.classList.add("show");
 }
 
-const observer = new IntersectionObserver(observeHomeSection).observe(
-    homeSection
-);
+const observer = new IntersectionObserver(observeHomeSection).observe(navbar);
