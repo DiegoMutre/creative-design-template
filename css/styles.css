@@ -562,3 +562,31 @@ button {
     margin: 5rem 0;
 }
 /* End of Section 4 Styles */
+
+.scroll-up-btn {
+    visibility: hidden;
+    opacity: 0;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(50, 231, 255, 0.8);
+    position: fixed;
+    bottom: 5rem;
+    right: 4vw;
+    border-radius: 50%;
+    font-size: 1.6rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s, opacity 0.5s;
+}
+
+.scroll-up-btn:hover {
+    background-color: #32e7ff;
+}
+
+.scroll-up-btn.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
