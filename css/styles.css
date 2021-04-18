@@ -445,3 +445,120 @@ button {
 }
 
 /* End of Section 3 Styles */
+
+/* Section 4 Styles */
+.section-4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-container {
+    /* width: 80%; */
+    width: 100%;
+    height: 70vh;
+    background-color: #e5e9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.3rem 0.3rem 0.4rem #ccc, -0.1rem 0.1rem 0.4rem #ccc;
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 281px) {
+    .form-container {
+        width: 80%;
+    }
+}
+
+.form-img {
+    width: 0%;
+}
+
+@media (min-width: 1280px) {
+    .form-container {
+        justify-content: space-evenly;
+        perspective: 100rem;
+    }
+
+    .form-img {
+        width: 55rem;
+        background-color: rgba(50, 231, 255, 0.8);
+        padding: 5rem;
+        opacity: 0.8;
+        box-shadow: -3rem -3rem 4rem #aaa;
+        border-radius: 0.5rem;
+        transform: rotateY(20deg);
+        transition: all 0.5s;
+    }
+
+    .form-img:hover {
+        transform: translateY(-2rem) rotateY(20deg);
+    }
+}
+
+.contact-form {
+    width: 80%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 0.5rem;
+    box-shadow: 3rem 3rem 4rem #aaa;
+}
+
+@media (min-width: 1280px) {
+    .contact-form {
+        width: 45rem;
+        transform: rotateY(-20deg);
+        transition: all 0.5s;
+    }
+
+    .contact-form:hover {
+        transform: translateY(-2rem) rotateY(-20deg);
+        box-shadow: 5rem 5rem 7rem #aaa;
+    }
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: inset 0.1rem 0.1rem 0.2rem #ddd,
+        inset -0.1rem -0.1rem 0.2rem #ddd;
+}
+
+.contact-form textarea {
+    max-height: 15rem;
+    min-height: 10rem;
+    max-width: 100%;
+    min-width: 70%;
+}
+
+.contact-form input[type="submit"] {
+    background-color: rgba(50, 231, 255, 0.8);
+    color: #fff;
+    font-weight: bolder;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #32e7ff;
+}
+
+.copyright {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    color: #444;
+    margin: 5rem 0;
+}
+/* End of Section 4 Styles */
